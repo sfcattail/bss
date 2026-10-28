@@ -2663,168 +2663,18 @@ function BeeSwarmSimulator(DATA){
         }
         
         triggers.become_blue_hive={
-            
-            isMachine:true,minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:6-1,maxZ:6+1,message:'become blue hive',func:function(player){
-                
-                player.currentGear={
-                    
-                    tool:'tidePopper',
-                    boots:'gummyBoots',
-                    belt:'petalBelt',
-                    backpack:'coconutCanister',
-                    mask:'diamondMask',
-                    leftGuard:'crimsonGuard',
-                    rightGuard:'cobaltGuard',
-                    glider:'glider',
-                    supremeStarAmulet:'*2.5 capacityMultiplier,*1.5 convertRate,*1.1 redPollen,*1.1 bluePollen,*1.1 whitePollen,*1.6 bluePollen,+0.1 instantBlueConversion,+0.1 instantWhiteConversion,+0.1 instantRedConversion,+0.05 criticalChance,P popStarPassive,P starShowerPassive',
-                    sprinkler:'superSaturator',
-                    beequips:[],
-                }
-                
-                player.updateGear()
-                player.addEffect('superSmoothieBuff')
-                player.addEffect('comfortingNectar',1)
-                player.addEffect('refreshingNectar',1)
-                player.addEffect('invigoratingNectar',1)
-                player.addEffect('motivatingNectar',1)
-                player.addEffect('satisfyingNectar',1)
-                player.hive=[[]]
-                player.addSlot('basic')
-                player.addSlot('looker')
-                player.addSlot('bomber')
-                player.addSlot('bubble')
-                player.addSlot('bumble')
-                player.addSlot('bucko')
-                player.addSlot('cool')
-                player.addSlot('frosty')
-                player.addSlot('commander')
-                player.addSlot('windy')
-                player.addSlot('tabby')
-                player.addSlot('diamond')
-                player.addSlot('hasty')
-                player.addSlot('fuzzy')
-                player.addSlot('ninja')
-                player.addSlot('vicious')
-                player.addSlot('bear')
-                player.addSlot('music')
-                player.addSlot('music')
-                player.addSlot('music')
-                player.addSlot('gummy')
-                player.addSlot('honey')
+
+            isMachine:true,minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:6-1,maxZ:6+1,message:'add buoyant bee',func:function(player){
                 player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('buoyant')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('digital')
                 player.updateHive()
-                player.addEffect('balloonBlessing',false,125)
-                player.addEffect('tideBlessing',1)
-                player.addEffect('bubbleBloat',1)
             }
         }
-        
+
         triggers.become_white_hive={
-            
-            isMachine:true,minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:8-1,maxZ:8+1,message:'become white hive',func:function(player){
-                player.currentGear={
-                    
-                    tool:'gummyBaller',
-                    boots:'gummyBoots',
-                    belt:'petalBelt',
-                    backpack:'coconutCanister',
-                    mask:'gummyMask',
-                    leftGuard:'crimsonGuard',
-                    rightGuard:'cobaltGuard',
-                    glider:'glider',
-                    supremeStarAmulet:'*2.5 capacityMultiplier,*1.5 convertRate,*1.1 redPollen,*1.1 bluePollen,*1.1 whitePollen,*1.6 whitePollen,+0.1 instantBlueConversion,+0.1 instantWhiteConversion,+0.1 instantRedConversion,+0.05 criticalChance,P gummyStarPassive,P starSawPassive',
-                    sprinkler:'superSaturator',
-                    beequips:[],
-                }
-                
-                player.updateGear()
-                player.addEffect('superSmoothieBuff')
-                player.addEffect('comfortingNectar',1)
-                player.addEffect('refreshingNectar',1)
-                player.addEffect('invigoratingNectar',1)
-                player.addEffect('motivatingNectar',1)
-                player.addEffect('satisfyingNectar',1)
-                player.hive=[[]]
-                player.addSlot('basic')
-                player.addSlot('bomber')
-                player.addSlot('looker')
-                player.addSlot('precise')
-                player.addSlot('vector')
-                player.addSlot('windy')
-                player.addSlot('bear')
-                player.addSlot('festive')
-                player.addSlot('honey')
-                player.addSlot('commander')
-                player.addSlot('shocked')
-                player.addSlot('hasty')
-                player.addSlot('music')
-                player.addSlot('music')
-                player.addSlot('music')
-                player.addSlot('crimson')
+
+            isMachine:true,minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:8-1,maxZ:8+1,message:'add tadpole bee',func:function(player){
                 player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('tadpole')
-                player.addSlot('lion')
-                player.addSlot('gummy')
-                player.addSlot('photon')
-                player.addSlot('tabby')
-                player.addSlot('carpenter')
-                player.addSlot('carpenter')
-                player.addSlot('carpenter')
-                player.addSlot('carpenter')
-                player.addSlot('carpenter')
-                player.addSlot('demo')
-                player.addSlot('exhausted')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('vector')
-                player.addSlot('fuzzy')
-                player.addSlot('precise')
-                player.addSlot('precise')
-                player.addSlot('precise')
-                player.addSlot('precise')
-                player.addSlot('precise')
-                player.addSlot('digital')
                 player.updateHive()
-                
-                player.addEffect('balloonBlessing',false,50)
             }
         }
 
@@ -27857,7 +27707,7 @@ function BeeSwarmSimulator(DATA){
                 displayPos:[-16.75,35.35+4.25,77.5-7.5],
                 displayScale:[1.25,1.25,1.25],
             },{
-                amountPurchased:0,maxPurchasedAmount:25,
+                amountPurchased:0,maxPurchasedAmount:Infinity,
                 name:'hiveSlot',
                 slot:'item',
                 viewMatrix:[-10,37,74,MATH.HALF_PI,0],

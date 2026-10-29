@@ -511,27 +511,27 @@ function BeeSwarmSimulator(DATA){
 
     let blenderRecipes=[
         
-        {item:'gumdrops',req:[['pineapple',1],['strawberry',1],['blueberry',1],['sunflowerSeed',1]]},
-        {item:'moonCharm',req:[['royalJelly',1],['pineapple',2],['gumdrops',2]]},
-        {item:'redExtract',req:[['strawberry',35],['royalJelly',5]]},
-        {item:'blueExtract',req:[['blueberry',35],['royalJelly',5]]},
-        {item:'enzymes',req:[['pineapple',35],['royalJelly',5]]},
-        {item:'oil',req:[['sunflowerSeed',35],['royalJelly',5]]},
-        {item:'glue',req:[['gumdrops',10],['royalJelly',5]]},
-        {item:'tropicalDrink',req:[['coconut',5],['oil',1],['enzymes',1]]},
-        {item:'glitter',req:[['moonCharm',5],['magicBean',1]]},
-        {item:'starJelly',req:[['royalJelly',75],['glitter',3]]},
-        {item:'purplePotion',req:[['neonberry',3],['redExtract',1],['blueExtract',1],['glue',1]]},
-        {item:'superSmoothie',req:[['neonberry',3],['starJelly',1],['purplePotion',1],['tropicalDrink',2]]},
-        {item:'fieldDice',req:[['softWax',1],['whirligig',1],['redExtract',1],['blueExtract',1]]},
-        {item:'smoothDice',req:[['fieldDice',2],['whirligig',2],['softWax',2],['oil',2]]},
-        {item:'loadedDice',req:[['smoothDice',2],['hardWax',1],['oil',2],['glue',1]]},
-        {item:'softWax',req:[['honeysuckle',3],['oil',1],['enzymes',1],['royalJelly',5]]},
-        {item:'hardWax',req:[['softWax',2],['enzymes',1],['bitterberry',3],['royalJelly',5]]},
-        {item:'swirledWax',req:[['hardWax',1],['softWax',2],['purplePotion',1],['royalJelly',15]]},
-        {item:'causticWax',req:[['hardWax',2],['neonberry',5],['gumdrops',10],['royalJelly',25]]},
-        {item:'turpentine',req:[['superSmoothie',3],['causticWax',3],['starJelly',5],['honeysuckle',50]]},
-        {item:'diamondEgg',req:[['goldEgg',1],['swirledWax',1],['royalJelly',100]]},
+        {item:'gumdrops',req:[['royalJelly',0]]},
+        {item:'moonCharm',req:[['royalJelly',1]]},
+        {item:'redExtract',req:[['royalJelly',1]]},
+        {item:'blueExtract',req:[['royalJelly',1]]},
+        {item:'enzymes',req:[['royalJelly',1]]},
+        {item:'oil',req:[['royalJelly',1]]},
+        {item:'glue',req:[['royalJelly',1]]},
+        {item:'tropicalDrink',req:[['royalJelly',1]]},
+        {item:'glitter',req:[['royalJelly',1]]},
+        {item:'starJelly',req:[['royalJelly',1]]},
+        {item:'purplePotion',req:[['royalJelly',1]]},
+        {item:'superSmoothie',req:[['royalJelly',1]]},
+        {item:'fieldDice',req:[['royalJelly',1]]},
+        {item:'smoothDice',req:[['royalJelly',1]]},
+        {item:'loadedDice',req:[['royalJelly',1]]},
+        {item:'softWax',req:[['royalJelly',1]]},
+        {item:'hardWax',req:[['royalJelly',1]]},
+        {item:'swirledWax',req:[['royalJelly',1]]},
+        {item:'causticWax',req:[['royalJelly',1]]},
+        {item:'turpentine',req:[['royalJelly',1]]},
+        {item:'diamondEgg',req:[['royalJelly',1]]},
 
     ],windShrineDonations=[
 
@@ -21785,8 +21785,8 @@ function BeeSwarmSimulator(DATA){
         petalWand:{
             
             collectPattern:[[0,0],[0,-1],[0,-2],[0,-3],[0,-4],[0,-5],[0,-6],[-1,-3],[-1,-4],[-1,-5],[1,-3],[1,-4],[1,-5],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[-1,3],[-1,4],[-1,5],[1,3],[1,4],[1,5],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[3,1],[4,1],[5,1],[3,-1],[4,-1],[5,-1],[-1,0],[-2,0],[-3,0],[-4,0],[-5,0],[-6,0],[-3,1],[-4,1],[-5,1],[-3,-1],[-4,-1],[-5,-1]],
-            collectAmount:10,
-            cooldown:0.7,
+            collectAmount:100000,
+            cooldown:0.05,
             mesh:function(box,cylinder,sphere,star){
                 
                 box(-0.3-0.1,0.6,0.3+0.1,0.15,1.5,0.15,false,[0,0.7,0])
@@ -21810,7 +21810,7 @@ function BeeSwarmSimulator(DATA){
             },
             ability:function(){
                 
-                if(player.toolUses%3===0){
+                if(player.toolUses%1===0){
                     
                     objects.mobs.push(new PetalShuriken([player.body.position.x,player.body.position.y+0.25,player.body.position.z],player.bodyDir.slice()))
                 }

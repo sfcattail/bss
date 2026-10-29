@@ -27857,7 +27857,7 @@ function BeeSwarmSimulator(DATA){
                 displayPos:[-16.75,35.35+4.25,77.5-7.5],
                 displayScale:[1.25,1.25,1.25],
             },{
-                amountPurchased:0,maxPurchasedAmount:25,
+                amountPurchased:0,maxPurchasedAmount:Infinity,
                 name:'hiveSlot',
                 slot:'item',
                 viewMatrix:[-10,37,74,MATH.HALF_PI,0],

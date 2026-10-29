@@ -571,7 +571,7 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.bluePollen*=100
+                stats.pollen*=10000000
                 stats.whitePollen*=1.2
                 stats.redPollen*=1.2
                 stats.jumpPower*=1.1
@@ -589,6 +589,8 @@ window.playerGear={
                 stats.whiteBeeAbilityRate*=1.1
                 stats.capacityMultiplier*=100000
                 stats.lootLuck*=1000
+                stats.convertRate*=10000
+                stats.convertRateAtHive*=20000
                 player.addEffect('ignitePassive')
                 player.addEffect('coinScatterPassive')
                 player.addEffect('gummyMorphPassive')

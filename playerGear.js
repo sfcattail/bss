@@ -589,8 +589,8 @@ window.playerGear={
                 stats.whiteBeeAbilityRate*=1.1
                 stats.capacityMultiplier*=100000
                 stats.lootLuck*=1000
-                stats.convertRate*=10000
-                stats.convertRateAtHive*=20000
+                stats.convertRate*=100
+                stats.convertRateAtHive*=2
                 player.addEffect('ignitePassive')
                 player.addEffect('coinScatterPassive')
                 player.addEffect('gummyMorphPassive')

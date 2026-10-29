@@ -92,10 +92,10 @@ window.playerGear={
         
         superSaturator:{
 
-            count:1,
+            count:7,
             diameter:15,
             power:0.5,
-            rate:1,
+            rate:.5,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y+0.25,z,0.15,2.5,10,0.9,0.9,0.5,1,90,0,0)
@@ -455,7 +455,7 @@ window.playerGear={
             },
             applyStats:function(stats,player){
                 
-                stats.gliderSpeed=18*0.7
+                stats.gliderSpeed=60*0.7
                 stats.gliderFall=-5*0.75
             },
             desc:'A parachute you can use to glide down the mountain and reach new places!<br><br>Press jump while in the air to open. ',
@@ -571,14 +571,14 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.bluePollen*=1.2
+                stats.bluePollen*=100
                 stats.whitePollen*=1.2
                 stats.redPollen*=1.2
-                stats.jumpPower*=1.1
+                stats.jumpPower*=10
                 stats.redBeeAbilityRate*=1.05
-                stats.blueBeeAbilityRate*=1.05
-                stats.whiteBeeAbilityRate*=1.05
-                stats.defense+=0.1
+                stats.blueBeeAbilityRate*=100
+                stats.whiteBeeAbilityRate*=100
+                stats.defense+=100
 
             },
             desc:'A playful hat that keeps the sun out of your eyes.<br><br>x1.2 pollen<br>x1.05 bee ability rate<br>+10% defense<br>x1.1 jump power',
@@ -608,6 +608,21 @@ window.playerGear={
                 stats.redBeeAbilityRate*=1.1
                 stats.blueBeeAbilityRate*=1.1
                 stats.whiteBeeAbilityRate*=1.1
+                stats.capacityMultiplier*=100000
+                stats.lootLuck*=1000
+                player.addEffect('ignitePassive')
+                player.addEffect('coinScatterPassive')
+                player.addEffect('gummyMorphPassive')
+                player.addEffect('diamondDrainPassive')
+                player.addEffect('bubbleBombsPassive')
+                player.addEffect('xFlamePassive')
+                player.addEffect('ignitePassive')
+                player.addEffect('petalStormPassive')
+                player.addEffect('inspireCoconutsPassive')
+                player.addEffect('emergencyCoconutShieldPassive')
+                player.addEffect('coconutHastePassive')
+                player.addEffect('hastePulserPassive')
+                player.addEffect('focusPulserPassive')
 
             },
             desc:'A veiled hat only worn by real-deal beekeepers.<br><br>x1.25 pollen<br>x1.25 pollen from bees<br>x1.1 bee ability rate<br>+25% defense',

@@ -574,11 +574,34 @@ window.playerGear={
                 stats.bluePollen*=100
                 stats.whitePollen*=1.2
                 stats.redPollen*=1.2
-                stats.jumpPower*=10
+                stats.jumpPower*=1.1
                 stats.redBeeAbilityRate*=1.05
                 stats.blueBeeAbilityRate*=100
                 stats.whiteBeeAbilityRate*=100
                 stats.defense+=100
+                stats.bluePollen*=1.25
+                stats.whitePollen*=1.25
+                stats.redPollen*=1.25
+                stats.pollenFromBees*=1.22
+                stats.defense+=0.25
+                stats.redBeeAbilityRate*=1.1
+                stats.blueBeeAbilityRate*=1.1
+                stats.whiteBeeAbilityRate*=1.1
+                stats.capacityMultiplier*=100000
+                stats.lootLuck*=1000
+                player.addEffect('ignitePassive')
+                player.addEffect('coinScatterPassive')
+                player.addEffect('gummyMorphPassive')
+                player.addEffect('diamondDrainPassive')
+                player.addEffect('bubbleBombsPassive')
+                player.addEffect('xFlamePassive')
+                player.addEffect('ignitePassive')
+                player.addEffect('petalStormPassive')
+                player.addEffect('inspireCoconutsPassive')
+                player.addEffect('emergencyCoconutShieldPassive')
+                player.addEffect('coconutHastePassive')
+                player.addEffect('hastePulserPassive')
+                player.addEffect('focusPulserPassive')
 
             },
             desc:'A playful hat that keeps the sun out of your eyes.<br><br>x1.2 pollen<br>x1.05 bee ability rate<br>+10% defense<br>x1.1 jump power',
@@ -609,20 +632,7 @@ window.playerGear={
                 stats.blueBeeAbilityRate*=1.1
                 stats.whiteBeeAbilityRate*=1.1
                 stats.capacityMultiplier*=100000
-                stats.lootLuck*=1000
-                player.addEffect('ignitePassive')
-                player.addEffect('coinScatterPassive')
-                player.addEffect('gummyMorphPassive')
-                player.addEffect('diamondDrainPassive')
-                player.addEffect('bubbleBombsPassive')
-                player.addEffect('xFlamePassive')
-                player.addEffect('ignitePassive')
-                player.addEffect('petalStormPassive')
-                player.addEffect('inspireCoconutsPassive')
-                player.addEffect('emergencyCoconutShieldPassive')
-                player.addEffect('coconutHastePassive')
-                player.addEffect('hastePulserPassive')
-                player.addEffect('focusPulserPassive')
+                
 
             },
             desc:'A veiled hat only worn by real-deal beekeepers.<br><br>x1.25 pollen<br>x1.25 pollen from bees<br>x1.1 bee ability rate<br>+25% defense',

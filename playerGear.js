@@ -571,17 +571,14 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.pollen*=10000000
+                stats.pollen*=10
                 stats.whitePollen*=1.2
-                stats.redPollen*=1.2
-                stats.jumpPower*=1.1
-                stats.redBeeAbilityRate*=1.05
-                stats.blueBeeAbilityRate*=100
-                stats.whiteBeeAbilityRate*=100
+                stats.bluePollen*=1.2
+                stats.jumpPower*=1.5
+                stats.redBeeAbilityRate*=2
+                stats.blueBeeAbilityRate*=2
+                stats.whiteBeeAbilityRate*=2
                 stats.defense+=100
-                stats.bluePollen*=1.25
-                stats.whitePollen*=1.25
-                stats.redPollen*=1.25
                 stats.pollenFromBees*=1.22
                 stats.defense+=0.25
                 stats.redBeeAbilityRate*=1.1
@@ -589,7 +586,7 @@ window.playerGear={
                 stats.whiteBeeAbilityRate*=1.1
                 stats.capacityMultiplier*=100000
                 stats.lootLuck*=1000
-                stats.convertRate*=100
+                stats.convertRate*=2
                 stats.convertRateAtHive*=2
                 player.addEffect('ignitePassive')
                 player.addEffect('coinScatterPassive')

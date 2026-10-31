@@ -2512,70 +2512,9 @@ function BeeSwarmSimulator(DATA){
         
         triggers.become_mid_hive={
             
-            minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:10-1,maxZ:10+1,isMachine:true,message:'become midgame hive',
+            minX:23-1,maxX:23+1,minY:-2,maxY:5,minZ:10-1,maxZ:10+1,isMachine:true,message:'add hive slot',
             func:function(player){
-                player.currentGear={
-                    
-                    tool:'petalWand',
-                    boots:'mondoBoots',
-                    belt:'honeycombBelt',
-                    backpack:'porcelainOHive',
-                    mask:'honeyMask',
-                    leftGuard:'rileyGuard',
-                    rightGuard:'buckoGuard',
-                    glider:'glider',
-                    sprinkler:'superSaturator',
-                    beequips:[],
-                }
-                
-                player.updateGear()
-                player.hive=[[]]
                 player.addSlot('basic')
-                player.addSlot('looker')
-                player.addSlot('bomber')
-                player.addSlot('rascal')
-                player.addSlot('riley')
-                player.addSlot('cool')
-                player.addSlot('bumble')
-                player.addSlot('bucko')
-                player.addSlot('demo')
-                player.addSlot('commander')
-                player.addSlot('stubborn')
-                player.addSlot('hasty')
-                player.addSlot('rad')
-                player.addSlot('shocked')
-                player.addSlot('shocked',0)
-                player.addSlot('exhausted')
-                player.addSlot('baby')
-                player.addSlot('baby',0)
-                player.addSlot('baby',0)
-                player.addSlot('crimson',0)
-                player.addSlot('gummy',0)
-                player.addSlot('cobalt',0)
-                player.addSlot('fire')
-                player.addSlot('bubble')
-                player.addSlot('fire',0)
-                player.addSlot('bubble',0)
-                player.addSlot('frosty',0)
-                player.addSlot('frosty')
-                player.addSlot('shy')
-                player.addSlot('tadpole',0)
-                player.addSlot('ninja')
-                player.addSlot('tabby')
-                player.addSlot('rage',0)
-                player.addSlot('rage',0)
-                player.addSlot('rage')
-                player.addSlot('music')
-                player.addSlot('music',0)
-                player.addSlot('music')
-                player.addSlot('lion')
-                player.addSlot('lion',0)
-                player.addSlot('shy',0)
-                player.addSlot('demon',0)
-                player.addSlot('diamond')
-                player.addSlot('carpenter',0)
-                player.addSlot('carpenter',0)
-                player.addSlot('carpenter')
                 player.updateHive()
             }
         }

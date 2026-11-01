@@ -5073,8 +5073,8 @@ function BeeSwarmSimulator(DATA){
             
             update:(amount,player)=>{
                 
-                player.walkSpeed*=1.05
-                player.beeSpeed*=1.05
+                player.walkSpeed*=2
+                player.beeSpeed*=10
             },
             
             getMessage:(amount)=>{
@@ -21765,7 +21765,7 @@ function BeeSwarmSimulator(DATA){
             
             collectPattern:[[-3,-3],[-2,-5],[-2,-4],[-2,-3],[-2,-2],[-2,-1],[-1,-5],[-1,-4],[-1,-3],[-1,-2],[-1,-1],[0,-6],[0,-5],[0,-4],[0,-3],[0,-2],[0,-1],[0,0],[1,-5],[1,-4],[1,-3],[1,-2],[1,-1],[2,-5],[2,-4],[2,-3],[2,-2],[2,-1],[3,-3]],
             collectAmount:16,
-            cooldown:1,
+            cooldown:.05,
             mesh:function(box,cylinder,sphere,star){
                 
                 cylinder(-0.4,-0.1,0.4,0.15,0.35,15,0.26,2.7,1.1,90,0,0,0.15)

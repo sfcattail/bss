@@ -15342,7 +15342,7 @@ function BeeSwarmSimulator(DATA){
             this.starSawHitTimer=0
             this.level=6
             this.health=player.extraInfo.mob_snail_health||5000000
-            this.maxHealth=5000000
+            this.maxHealth=500000000
             this.pos=[fieldInfo[this.field].x+fieldInfo[this.field].width*0.5-19,fieldInfo[this.field].y+0.3,fieldInfo[this.field].z+fieldInfo[this.field].length*0.5,0]
             this.central=[fieldInfo[this.field].x+fieldInfo[this.field].width*0.5,fieldInfo[this.field].z+fieldInfo[this.field].length*0.5]
             this.flameTimer=0
